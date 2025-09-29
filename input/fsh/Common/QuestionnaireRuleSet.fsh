@@ -208,7 +208,6 @@ RuleSet: QuestionnaireExamplesMetadata(name)
 RuleSet: QuestionnaireResponseCommons(questionnaire, patient)
 * questionnaire = Canonical({questionnaire})
 * status = #completed
-* subject = Reference({patient})
-* author = Reference({patient})
+* subject = Reference("Patient/{patient}")
+* author = Reference("Patient/{patient}")
 * authored = "2025-01-01"
-
