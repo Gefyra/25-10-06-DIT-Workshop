@@ -1,16 +1,17 @@
 Alias: $loinc = http://loinc.org
 Alias: $gender = http://hl7.org/fhir/administrative-gender
 
+//Gerenderte Demo: https://gematik.github.io/poc-isik-formular/index.html?base=https://fhir.hl7.de/fhir&id=72&patient=10
 
-Instance: MeinQuestionnaire
+Instance: DitQuestionnaire
 InstanceOf: ISiKFormularDefinition
 
 //Einbinden des PflegegradDE ValueSet, damit es ohne externen Terminologieserver gerendert werden kann
 * contained[+] = PflegegradDE
 
 * title = "Mein Questionnaire"
-* url = "https://interop-tag.de/fhir/Questionnaire/MeinQuestionnaire"
-* description = "### Beispiel-Questionnaire "
+* url = "https://interop-tag.de/fhir/Questionnaire/DitQuestionnaire"
+* description = "### Beispiel-Questionnaire beim DIT Workshop"
 * status = #draft
 * version = "1.0.0"
 
